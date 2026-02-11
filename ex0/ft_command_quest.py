@@ -9,6 +9,8 @@ if __name__ == "__main__":
     else:
         print(f"Program name: {sys.argv[0]}")
         print(f"Arguments received: {count - 1}")
-        for i, arg in enumerate(sys.argv[1:], start=1):
-            print(f"Argument {i}: {arg}")
+        i = 1
+        while i < count:
+            print(f"Argument {i}: {sys.argv[i]}")
+            i += 1
     print(f"Total arguments: {count}")

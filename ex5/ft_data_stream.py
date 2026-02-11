@@ -25,7 +25,6 @@ def prime_generator(n):
     num = 2
     while count < n:
         is_prime = True
-        # Test basic de primalité
         for i in range(2, num):
             if num % i == 0:
                 is_prime = False
