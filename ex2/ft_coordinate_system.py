@@ -1,7 +1,7 @@
 import math
 
 
-def calculate_distance(point1: int, point2: int):
+def calculate_distance(point1: int, point2: int) -> int:
     return math.sqrt(
         (point2[0] - point1[0])**2 +
         (point2[1] - point1[1])**2 +

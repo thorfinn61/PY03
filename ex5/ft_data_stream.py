@@ -13,14 +13,14 @@ def generate_events(count: int):
         yield (i, player, level, action)
 
 
-def fibonacci_generator(n):
+def fibonacci_generator(n: int):
     a, b = 0, 1
     for _ in range(n):
         yield a
         a, b = b, a + b
 
 
-def prime_generator(n):
+def prime_generator(n: int):
     count = 0
     num = 2
     while count < n:
